@@ -61,10 +61,6 @@ th, td {
 	border-bottom: 1px solid var(--color-border);
 }
 
-th {
-	/* text-align: left; */
-}
-
 td {
 	text-align: center;
 }

@@ -1,6 +1,5 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import IndexLayout from '../layouts/IndexLayout.astro';
 import cover from '../assets/cover.png';
 import logo from '../assets/pocket_dragon_logo.svg';
 
@@ -10,13 +9,8 @@ const chapters = await getCollection('capitulos');
 chapters.sort((a, b) => a.data.number - b.data.number);
 
 const baseUrl = import.meta.env.BASE_URL;
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
-
-<Layout>
-	<!-- <Welcome /> -->
-
+<IndexLayout>
 	<header>
 		<div class="container">
 			<img class="logo" src={logo.src} alt="Pocket Dragon 2.0" />
@@ -38,7 +32,7 @@ const baseUrl = import.meta.env.BASE_URL;
 			</div>
 		</div>
 	</section>
-</Layout>
+</IndexLayout>
 
 <style>
 	header {
@@ -72,5 +66,4 @@ const baseUrl = import.meta.env.BASE_URL;
 			max-width: 400px;
 		}
 	}
-
 </style>

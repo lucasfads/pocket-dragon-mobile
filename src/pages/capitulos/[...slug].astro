@@ -20,11 +20,9 @@ const nextChapter = index < chapters.length - 1 ? chapters[index + 1] : null;
 
 const baseUrl = import.meta.env.BASE_URL;
 ---
-
 <ChapterLayout number={chapter.data.number} title={chapter.data.title}>
 	<section>
 		<nav class="container chapter-navigation">
-			<!-- link to home -->
 			<a href={`${baseUrl}/`}>← Índice</a>
 			<div>
 				{previousChapter && (
