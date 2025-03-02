@@ -65,6 +65,10 @@ td {
 	text-align: center;
 }
 
+ul {
+	list-style-type: square;
+}
+
 .two-cols {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
