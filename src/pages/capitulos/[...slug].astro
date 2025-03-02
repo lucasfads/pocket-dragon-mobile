@@ -17,19 +17,21 @@ const { Content } = await render(chapter);
 
 const previousChapter = index > 0 ? chapters[index - 1] : null;
 const nextChapter = index < chapters.length - 1 ? chapters[index + 1] : null;
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <ChapterLayout number={chapter.data.number} title={chapter.data.title}>
 	<section>
 		<nav class="container chapter-navigation">
 			<!-- link to home -->
-			<a href="/">← Índice</a>
+			<a href={`${baseUrl}/`}>← Índice</a>
 			<div>
 				{previousChapter && (
-					<a class="prev" href={`/capitulos/${previousChapter.data.slug}`}>← {previousChapter.data.title}</a>
+					<a class="prev" href={`${baseUrl}/capitulos/${previousChapter.data.slug}`}>← {previousChapter.data.title}</a>
 				)}
 				{nextChapter && (
-					<a class="next" href={`/capitulos/${nextChapter.data.slug}`}>{nextChapter.data.title} →</a>
+					<a class="next" href={`${baseUrl}/capitulos/${nextChapter.data.slug}`}>{nextChapter.data.title} →</a>
 				)}
 			</div>
 		</nav>
