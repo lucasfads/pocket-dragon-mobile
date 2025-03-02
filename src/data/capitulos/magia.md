@@ -2,7 +2,7 @@
 number: 5
 title: "Magia"
 intro: "Força Mística domada por Magos e Elfos que canalizam as energias em busca de seus efeitos."
-slug: "magic"
+slug: "magia"
 ---
 ### Magias por Dia
 - Um mago pode lançar magias por dia igual a **2 × nível**.

@@ -6,7 +6,7 @@ import logo from '../assets/pocket_dragon_logo.svg';
 
 import { getCollection, getEntry } from 'astro:content';
 
-const chapters = await getCollection('chapters');
+const chapters = await getCollection('capitulos');
 chapters.sort((a, b) => a.data.number - b.data.number);
 
 
@@ -31,7 +31,7 @@ chapters.sort((a, b) => a.data.number - b.data.number);
 				<ul class="index">
 					{chapters.map((chapter) => (
 						<li>
-							{chapter.data.number}. <a href={`/chapters/${chapter.data.slug}`}>{chapter.data.title}</a>
+							{chapter.data.number}. <a href={`/capitulos/${chapter.data.slug}`}>{chapter.data.title}</a>
 						</li>
 					))}
 				</ul>

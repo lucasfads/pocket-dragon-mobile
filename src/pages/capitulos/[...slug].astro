@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import ChapterLayout from '../../layouts/ChapterLayout.astro';
 
 export async function getStaticPaths() {
-	const chapters = await getCollection('chapters');
+	const chapters = await getCollection('capitulos');
 	chapters.sort((a, b) => a.data.number - b.data.number);
 
 	return chapters.map((chapter, index) => ({
@@ -26,10 +26,10 @@ const nextChapter = index < chapters.length - 1 ? chapters[index + 1] : null;
 			<a href="/">← Índice</a>
 			<div>
 				{previousChapter && (
-					<a class="prev" href={`/chapters/${previousChapter.data.slug}`}>← {previousChapter.data.title}</a>
+					<a class="prev" href={`/capitulos/${previousChapter.data.slug}`}>← {previousChapter.data.title}</a>
 				)}
 				{nextChapter && (
-					<a class="next" href={`/chapters/${nextChapter.data.slug}`}>{nextChapter.data.title} →</a>
+					<a class="next" href={`/capitulos/${nextChapter.data.slug}`}>{nextChapter.data.title} →</a>
 				)}
 			</div>
 		</nav>

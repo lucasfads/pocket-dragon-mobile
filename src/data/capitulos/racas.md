@@ -2,7 +2,7 @@
 number: 2
 title: "Raças"
 intro: "As quatro raças básicas disponíveis aos personagens jogadores de Pocket Dragon são:"
-slug: "races"
+slug: "racas"
 ---
 ### Humanos
 - Espertos, adaptáveis e ambiciosos.
