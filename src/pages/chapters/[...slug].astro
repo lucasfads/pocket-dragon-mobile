@@ -4,17 +4,31 @@ import ChapterLayout from '../../layouts/ChapterLayout.astro';
 
 export async function getStaticPaths() {
   const chapters = await getCollection('chapters');
-  return chapters.map(chapter => ({
+  chapters.sort((a, b) => a.data.number - b.data.number);
+
+  return chapters.map((chapter, index) => ({
     params: { slug: chapter.data.slug },
-    props: { chapter },
+    props: { chapter, index, chapters },
   }));
 }
 
-const { chapter } = Astro.props;
+const { chapter, index, chapters } = Astro.props;
 const { Content } = await render(chapter);
+
+const previousChapter = index > 0 ? chapters[index - 1] : null;
+const nextChapter = index < chapters.length - 1 ? chapters[index + 1] : null;
 ---
 
 <ChapterLayout number={chapter.data.number} title={chapter.data.title}>
   <h1>{chapter.data.title}</h1>
   <Content />
+
+  <nav>
+    {previousChapter && (
+      <a href={`/chapters/${previousChapter.data.slug}`}>← {previousChapter.data.title}</a>
+    )}
+    {nextChapter && (
+      <a href={`/chapters/${nextChapter.data.slug}`}>{nextChapter.data.title} →</a>
+    )}
+  </nav>
 </ChapterLayout>
