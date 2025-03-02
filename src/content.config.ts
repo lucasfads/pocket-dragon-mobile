@@ -8,6 +8,7 @@ const chapters = defineCollection({
 	schema: z.object({
 		number: z.number(),
 		title: z.string(),
+		intro: z.string(),
 		slug: z.string(),
 	}),
 });

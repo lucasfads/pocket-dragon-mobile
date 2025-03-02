@@ -1,6 +1,7 @@
 ---
 number: 5
 title: "Magia"
+intro: "Força Mística domada por Magos e Elfos que canalizam as energias em busca de seus efeitos."
 slug: "magic"
 ---
 ### Magias por Dia

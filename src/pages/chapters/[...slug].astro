@@ -3,13 +3,13 @@ import { getCollection, render } from 'astro:content';
 import ChapterLayout from '../../layouts/ChapterLayout.astro';
 
 export async function getStaticPaths() {
-  const chapters = await getCollection('chapters');
-  chapters.sort((a, b) => a.data.number - b.data.number);
+	const chapters = await getCollection('chapters');
+	chapters.sort((a, b) => a.data.number - b.data.number);
 
-  return chapters.map((chapter, index) => ({
-    params: { slug: chapter.data.slug },
-    props: { chapter, index, chapters },
-  }));
+	return chapters.map((chapter, index) => ({
+		params: { slug: chapter.data.slug },
+		props: { chapter, index, chapters },
+	}));
 }
 
 const { chapter, index, chapters } = Astro.props;
@@ -20,15 +20,39 @@ const nextChapter = index < chapters.length - 1 ? chapters[index + 1] : null;
 ---
 
 <ChapterLayout number={chapter.data.number} title={chapter.data.title}>
-  <h1>{chapter.data.title}</h1>
-  <Content />
+	<section>
+		<div class="container">
+			<h2><span>{chapter.data.number}.</span> {chapter.data.title}</h2>
+			<p>{chapter.data.intro}</p>
+			<Content />
+		</div>
+	</section>
 
-  <nav>
-    {previousChapter && (
-      <a href={`/chapters/${previousChapter.data.slug}`}>← {previousChapter.data.title}</a>
-    )}
-    {nextChapter && (
-      <a href={`/chapters/${nextChapter.data.slug}`}>{nextChapter.data.title} →</a>
-    )}
-  </nav>
+	<div class="section">
+		<nav class="container chapter-navigation">
+			{previousChapter && (
+				<a class="prev" href={`/chapters/${previousChapter.data.slug}`}>← {previousChapter.data.title}</a>
+			)}
+			{nextChapter && (
+				<a class="next" href={`/chapters/${nextChapter.data.slug}`}>{nextChapter.data.title} →</a>
+			)}
+		</nav>
+	</div>
+	
 </ChapterLayout>
+
+<style>
+	.chapter-navigation {
+		display: flex;
+		justify-content: space-between;
+		padding-block: 2rem;
+
+		& .prev {
+			margin-right: auto;
+		}
+
+		& .next {
+			margin-left: auto;
+		}
+	}
+</style>

@@ -8,9 +8,9 @@ section, header, footer {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 800px;
 	width: 100%;
-  	margin: 0 auto;
+  	margin-inline: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {

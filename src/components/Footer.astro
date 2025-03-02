@@ -1,11 +1,30 @@
 ---
 ---
 <footer>
-   <div><strong>Pocket Dragon 2.0</strong>, criado por <strong>Antonio Sá Neto</strong> e <strong>Rafael Beltrame</strong>. Ilustrado por <strong>Carlos Castilho</strong>. Licenciado sob <strong><a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br">CC BY-NC-SA 4.0</a></strong>.</div>
-   <div>Versão Mobile desenvolvida por <strong><a target="_blank" href="https://lucasfads.com/">Lucas Fads</a></strong>.</div>
+	<div class="container">
+		<div>
+			<div></div><strong>Pocket Dragon 2.0</strong>, criado por <strong>Antonio Sá Neto</strong> e <strong>Rafael Beltrame</strong>.
+			<div>Ilustrado por <strong>Carlos Castilho</strong>.</div>
+		</div>
+		<div>
+			<div> Licenciado sob <strong><a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br">CC BY-NC-SA 4.0</a></strong>.</div>
+			<div>Versão Mobile desenvolvida por <strong><a target="_blank" href="https://lucasfads.com/">Lucas Fads</a></strong>.</div>
+		</div>
+	</div>
 </footer>
+
 <style>
-  footer {
-  	text-align: center;
-  }
+	footer {
+		font-size: 0.8rem;
+		padding-block: 2rem;
+	}
+	footer .container {
+		display: flex;
+		gap: 1rem;
+		justify-content: space-between;
+	}
+
+	footer .container > div:last-child {
+		text-align: right;
+	}
 </style>

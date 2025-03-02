@@ -1,6 +1,7 @@
 ---
 number: 6
 title: "Experiência"
+intro: "A evolução das habilidades e do poder dos personagens."
 slug: "experience"
 ---
 - Grupo recebe **100 XP por dado de vida do monstro derrotado**.

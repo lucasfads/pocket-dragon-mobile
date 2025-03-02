@@ -1,6 +1,7 @@
 ---
 number: 1
 title: "Classes"
+intro: "As quatro classes básicas disponíveis aos personagens jogadores de Pocket Dragon são:"
 slug: "classes"
 ---
 ### Guerreiro

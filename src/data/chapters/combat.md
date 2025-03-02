@@ -1,6 +1,7 @@
 ---
 number: 4
 title: "Combate"
+intro: "Certamente a parte mais esperada em um bom jogo de RPG"
 slug: "combat"
 ---
 ### Armaduras

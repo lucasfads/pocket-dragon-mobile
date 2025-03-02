@@ -1,6 +1,7 @@
 ---
 number: 3
 title: "Subatributos"
+intro: "As habilidades secundárias de um personagem de Pocket Dragon são:"
 slug: "substributes"
 ---
 ### Teste de Personagem (TP)
