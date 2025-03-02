@@ -1,5 +1,6 @@
 ---
 const { number, title } = Astro.props;
+import InnerHeader from '../components/InnerHeader.astro';
 import Footer from '../components/Footer.astro';
 import '@fontsource/uncial-antiqua';
 import '@fontsource/libre-baskerville';
@@ -15,6 +16,7 @@ import '../styles/global.css';
 		<title>Capítulo {number} - {title}</title>
 	</head>
 	<body>
+		<InnerHeader />
 		<slot />
 		<Footer />
 	</body>
