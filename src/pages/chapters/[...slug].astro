@@ -28,7 +28,7 @@ const nextChapter = index < chapters.length - 1 ? chapters[index + 1] : null;
 		</div>
 	</section>
 
-	<div class="section">
+	<section>
 		<nav class="container chapter-navigation">
 			{previousChapter && (
 				<a class="prev" href={`/chapters/${previousChapter.data.slug}`}>← {previousChapter.data.title}</a>
@@ -37,7 +37,7 @@ const nextChapter = index < chapters.length - 1 ? chapters[index + 1] : null;
 				<a class="next" href={`/chapters/${nextChapter.data.slug}`}>{nextChapter.data.title} →</a>
 			)}
 		</nav>
-	</div>
+	</section>
 	
 </ChapterLayout>
 

@@ -1,10 +1,18 @@
+:root {
+	--black: rgb(35,31,32);
+	--accent: rgb(17,110,171);
+	--bg: rgb(226,221,214);
+}
+
 body {
 	font-family: 'Libre Baskerville', serif;
+	color: var(--black);
 	margin: 0;
+	background-color: var(--bg);
 }
 
 section, header, footer {
- padding-inline: 1rem;
+ padding-inline: 2rem;
 }
 
 .container {
@@ -15,4 +23,17 @@ section, header, footer {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Uncial Antiqua', sans-serif;
+}
+
+h2 span {
+	color: var(--accent);
+}
+
+h3 {
+	color: var(--accent);
+}
+
+a {
+	color: var(--accent);
+	text-decoration: none;
 }
