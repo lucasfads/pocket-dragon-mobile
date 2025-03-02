@@ -1,5 +1,8 @@
-## 3. Subatributos
-
+---
+number: 3
+title: "Subatributos"
+slug: "substributes"
+---
 ### Teste de Personagem (TP)
 - Realizado com 2d6 + modificadores.
 - O resultado precisa atingir **10** para sucesso.

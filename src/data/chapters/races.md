@@ -1,5 +1,8 @@
-## 2. Raças
-
+---
+number: 2
+title: "Raças"
+slug: "races"
+---
 ### Humanos
 - Espertos, adaptáveis e ambiciosos.
 - **Movimento**: 9.

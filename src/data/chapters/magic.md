@@ -1,5 +1,8 @@
-## 5. Magia
-
+---
+number: 5
+title: "Magia"
+slug: "magic"
+---
 ### Magias por Dia
 - Um mago pode lançar magias por dia igual a **2 × nível**.
 

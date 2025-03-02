@@ -1,5 +1,8 @@
-## 1. Classes
-
+---
+number: 1
+title: "Classes"
+slug: "classes"
+---
 ### Guerreiro
 - Ótimo combatente, usa bem as armas, mas é péssimo na defesa de efeitos mágicos.
 - **Bônus**: +1 no dano quando acerta um golpe, +1 na CA.
@@ -26,3 +29,4 @@
 - **Pontos de Vida**: 4 iniciais, +1d6-1 a cada nível.
 - **Equipamento**: Apenas adagas e bordões; não pode usar armaduras.
 - **Habilidade Especial**: Pode lançar magias arcanas.
+"

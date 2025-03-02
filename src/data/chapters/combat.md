@@ -1,5 +1,8 @@
-## 4. Combate
-
+---
+number: 4
+title: "Combate"
+slug: "combat"
+---
 ### Armaduras
 - **Escudo**: +1 CA.
 - **Couro**: +2 CA.
