@@ -1,6 +1,7 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import cover from '../assets/cover.png';
 
 import { getCollection, getEntry } from 'astro:content';
 
@@ -18,13 +19,43 @@ chapters.sort((a, b) => a.data.number - b.data.number);
 	<section>
 		<div class="container">
 			<h2>Chapters</h2>
-			<ul>
-				{chapters.map((chapter) => (
-					<li>
-						{chapter.data.number}. <a href={`/chapters/${chapter.data.slug}`}>{chapter.data.title}</a>
-					</li>
-				))}
-			</ul>
+			<div class="two-cols">
+				<img id="cover" src={cover.src} alt="Pocket Dragon 2.0" />
+				<ul class="index">
+					{chapters.map((chapter) => (
+						<li>
+							{chapter.data.number}. <a href={`/chapters/${chapter.data.slug}`}>{chapter.data.title}</a>
+						</li>
+					))}
+				</ul>
+			</div>
 		</div>
 	</section>
 </Layout>
+
+<style>
+	#cover {
+		width: 100%;
+		mix-blend-mode: multiply;
+		margin-inline: auto;
+	}
+
+	.index {
+		list-style: none;
+		padding: unset;
+		margin: unset;
+	}
+
+	.index li {
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	@media (max-width: 600px) {
+		#cover {
+			max-width: 400px;
+		}
+	}
+
+</style>

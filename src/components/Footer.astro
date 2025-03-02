@@ -27,4 +27,15 @@
 	footer .container > div:last-child {
 		text-align: right;
 	}
+
+	/* media query */
+	@media (max-width: 600px) {
+		footer .container {
+			flex-direction: column;
+		}
+		footer .container > div,
+		footer .container > div:last-child {
+			text-align: center;
+		}
+	}
 </style>

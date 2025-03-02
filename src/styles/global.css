@@ -66,3 +66,18 @@ td {
 	text-align: center;
 }
 
+.two-cols {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+@media (max-width: 600px) {
+	section, header, footer {
+		padding-inline: 1rem;
+	}
+	
+	.two-cols {
+		grid-template-columns: 1fr;
+	}
+}
