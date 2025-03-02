@@ -4,5 +4,5 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://lucasfads.github.io',
-	base: 'pocket-dragon-mobile'
+	base: '/pocket-dragon-mobile'
 });
