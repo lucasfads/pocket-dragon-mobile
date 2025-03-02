@@ -24,10 +24,12 @@ section, header, footer {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Uncial Antiqua', sans-serif;
+	margin-block: unset
 }
 
 h2 {
 	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
 }
 
 h2 span {
@@ -37,6 +39,7 @@ h2 span {
 h3 {
 	font-size: 1.5rem;
 	color: var(--accent);
+	margin-block: 1.5rem 1rem;
 }
 
 a {
