@@ -5,23 +5,28 @@ intro: "As quatro raças básicas disponíveis aos personagens jogadores de Pock
 slug: "racas"
 ---
 ### Humanos
-- Espertos, adaptáveis e ambiciosos.
-- **Movimento**: 9.
-- **Habilidade Especial**: Uma vez ao dia, podem realizar qualquer TP com 3d6 usando apenas os dois maiores valores.
+- **Perfil:** Adaptáveis, ambiciosos e versáteis.  
+- **Características:**  
+  - Movimento 9.  
+  - Uma vez ao dia, podem fazer qualquer TP rolando 3d6 e escolhendo os dois maiores valores.
 
 ### Elfos
-- Criaturas longevas, ligadas à natureza e à magia.
-- **Movimento**: 9.
-- **Bônus**: +1 nos danos causados por arcos, calculam magias diárias como se tivessem um nível a mais.
-- **Penalidade**: Jamais recebem mais que 1d6 PV por nível.
+- **Perfil:** Longévios, ligados à natureza e à magia.  
+- **Características:**  
+  - Movimento 9.  
+  - +1 de dano com arcos.  
+  - Calculam magias diárias como se tivessem um nível a mais.  
+  - Máximo de 1d6 PV por nível.
 
 ### Anões
-- Resistentes, honrados e turrões, ligados à terra e metais.
-- **Movimento**: 6.
-- **Habilidade Especial**: Realizam TP para resistir a efeitos com 3d6, usando os dois maiores valores.
+- **Perfil:** Teimosos, resistentes, ligados à terra e aos metais.  
+- **Características:**  
+  - Movimento 6.  
+  - Resistência especial: ao fazer TP para resistir a qualquer efeito, rolam 3d6 e escolhem os dois maiores dados.
 
 ### Halflings
-- Criaturas espertas e ágeis, ligadas ao campo e conforto.
-- **Movimento**: 6.
-- **Habilidade Especial**: Realizam TP para se esconder ou furtar com 3d6, usando os dois maiores valores.
-- **Penalidade**: Não podem usar armas que causem mais de 1d6 de dano.
+- **Perfil:** Pequenos, espertos e ágeis, ligados ao conforto do lar.  
+- **Características:**  
+  - Movimento 6.  
+  - Se forem Ladrões, rolam 3d6 para se esconder ou furtar, escolhendo os dois maiores dados.  
+  - Não podem usar armas que causem mais de 1d6 de dano.

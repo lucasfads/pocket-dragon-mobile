@@ -5,28 +5,34 @@ intro: "Força Mística domada por Magos e Elfos que canalizam as energias em bu
 slug: "magia"
 ---
 ### Magias por Dia
-- Um mago pode lançar magias por dia igual a **2 × nível**.
+- Mago pode lançar **2 x nível** magias ao dia.  
+- Ex.: Nível 3 → 6 magias/dia.
 
 ### Acesso às Magias
 - No **1º nível**, tem **3 magias** no grimório.
 - A cada nível, adiciona **2 novas magias**.
 
 ### Resistência à Magia
-- Algumas magias concedem resistência, exigindo um TP.
+- Alguns alvos podem fazer um TP para reduzir ou evitar efeitos.
 - Número alvo: **5 + nível do mago**.
 
+### Duração, Efeitos e Alcance
+- Se a descrição da magia não for clara, o Mestre decide com base no bom senso e na diversão de todos.
+
 ### Lista de Magias
-- Magia é composta por **Ordem + Tema**.
+- Magia é composta por duas palavras arcanas: **Ordem + Tema**.
 
-**Ordem**:
-- **Abjurar** (proteção)
-- **Conjurar** (invocação)
-- **Adivinhar** (revelação)
-- **Encantar** (efeitos mágicos)
-- **Evocar** (energia)
-- **Iludir** (percepção)
-- **Decair** (necromancia)
-- **Transmutar** (transformação)
+- **Ordem** (que a magia faz):
+  - **Abjurar** (proteção)
+  - **Conjurar** (invocação)
+  - **Adivinhar** (revelação)
+  - **Encantar** (efeitos mágicos)
+  - **Evocar** (energia)
+  - **Iludir** (percepção)
+  - **Decair** (necromancia)
+  - **Transmutar** (transformação)
 
-**Tema**:
-- Animal, Planta, Fogo, Água, Terra, Ar, Luz, etc.
+- **Tema** (onde atua):
+  - Animal, Planta, Fogo, Água, Terra, Ar, Luz, etc.
+
+- Mago e Mestre criam juntos os efeitos, sempre priorizando a diversão e a coerência.
