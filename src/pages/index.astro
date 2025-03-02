@@ -15,13 +15,16 @@ chapters.sort((a, b) => a.data.number - b.data.number);
 <Layout>
 	<!-- <Welcome /> -->
 
-	<h1>Chapters</h1>
-	<ul>
-		{chapters.map((chapter) => (
-			<li>
-				{chapter.data.number}. <a href={`/chapters/${chapter.data.slug}`}>{chapter.data.title}</a>
-			</li>
-		))}
-	</ul>
-
+	<section>
+		<div class="container">
+			<h2>Chapters</h2>
+			<ul>
+				{chapters.map((chapter) => (
+					<li>
+						{chapter.data.number}. <a href={`/chapters/${chapter.data.slug}`}>{chapter.data.title}</a>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
 </Layout>
