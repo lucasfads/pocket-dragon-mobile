@@ -12,7 +12,7 @@ slug: "combat"
 
 ### Armas
 
-| Arma          | Dano   | Iniciativa |
+| Arma         | Dano   | Iniciativa |
 |--------------|--------|------------|
 | Adaga        | 1d6-1  | +8         |
 | Cajado       | 1d6-1  | +7         |

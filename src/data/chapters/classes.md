@@ -30,4 +30,3 @@ slug: "classes"
 - **Pontos de Vida**: 4 iniciais, +1d6-1 a cada nível.
 - **Equipamento**: Apenas adagas e bordões; não pode usar armaduras.
 - **Habilidade Especial**: Pode lançar magias arcanas.
-"
