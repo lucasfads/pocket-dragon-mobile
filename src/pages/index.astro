@@ -2,6 +2,7 @@
 import IndexLayout from '../layouts/IndexLayout.astro';
 import cover from '../assets/cover.png';
 import logo from '../assets/pocket_dragon_logo.svg';
+import pdf from '../assets/pocket-dragon-2-edicao.pdf';
 
 import { getCollection, getEntry } from 'astro:content';
 
@@ -32,6 +33,11 @@ const baseUrl = import.meta.env.BASE_URL;
 			</div>
 		</div>
 	</section>
+	<section class="download">
+		<div class="container">
+			Baixe o PDF original do Pocket Dragon 2ª edição <a href={pdf} download>aqui</a>.
+		</div>
+	</section>
 </IndexLayout>
 
 <style>
@@ -59,6 +65,16 @@ const baseUrl = import.meta.env.BASE_URL;
 		padding-bottom: 1rem;
 		margin-bottom: 1rem;
 		border-bottom: 1px solid var(--color-border);
+	}
+
+	.download {
+		margin-top: 2rem;
+	}
+
+	.download .container {
+		background-color: var(--color-border);
+		padding: 2rem;
+		border-radius: 0.25rem;
 	}
 
 	@media (max-width: 600px) {

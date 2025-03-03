@@ -6,7 +6,7 @@ Este material foi criado para servir como um conjunto de regras rápidas e diver
 A versão live do projeto está disponível em: [**Pocket Dragon Mobile**](https://lucasfads.github.io/pocket-dragon-mobile/).
 
 ## Créditos e licença
-**Pocket Dragon** criado por Antonio Neto com a colaboração de Rafael Beltrame e ilustrado por Carlos Castilho.
+**Pocket Dragon 2.0** criado por Antonio Neto com a colaboração de Rafael Beltrame e ilustrado por Carlos Castilho.
 
 Este projeto foi desenvolvido por [**Lucas Fads**](https://lucasfads.com/), adaptando as regras do Pocket Dragon 2.0 para um formato digital.
 
